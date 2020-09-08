@@ -47,7 +47,7 @@ class ClaimList extends React.Component {
     if(this.props.claimList){
 
         myTr = this.props.claimList.map(function(claim, index) {
-          return (<tr>
+          return (<tr key={index}>
             <td><a className="updateTdBut" href="#" onClick={() => showUpdateContent(claim)}>{claim.emp_id}</a></td>
             <td>{claim.emp_name}</td>
             <td>{claim.claim_number}</td>

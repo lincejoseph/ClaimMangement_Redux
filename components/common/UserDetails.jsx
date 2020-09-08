@@ -44,7 +44,7 @@ logoutAction(){
              <label className=""> Last Login :</label>  {today.currentTime}
             </Navbar.Text>
             <Nav.Link eventKey={2} href="#" onClick={this.logout} className="mr-sm-2 text-white font-weight-bold">
-                        Logout
+            <i className="fa fa-sign-out fa-1x"></i> Logout
             </Nav.Link>
           </Navbar.Collapse>
         </Navbar>
